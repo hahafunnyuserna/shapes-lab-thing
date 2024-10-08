@@ -1,7 +1,4 @@
-#include <iostream>
 #include "rectangle.hpp"
-
-using namespace std;
 
 Rectangle::Rectangle(double length, double width)
 {

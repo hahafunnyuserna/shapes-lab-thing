@@ -1,7 +1,5 @@
 #include "shapes.hpp"
 
-using namespace std;
-
 class Rectangle : public Shape
 {
     private:
