@@ -9,9 +9,9 @@ void rectangleCreate()
 {
     double side1;
     double side2;
-    cout << "\nPlease enter the length:\n";
+    cout << "\nPlease enter the width:\n";
     cin >> side1;
-    cout << "Please enter the width:\n";
+    cout << "Please enter the height:\n";
     cin >> side2;
     
     Shape *rect = new Rectangle(side1, side2);
@@ -33,9 +33,9 @@ void rightTriangleCreate()
 {
     double side1;
     double side2;
-    cout << "\nPlease enter the length:\n";
+    cout << "\nPlease enter the width:\n";
     cin >> side1;
-    cout << "Please enter the width:\n";
+    cout << "Please enter the height:\n";
     cin >> side2;
     
     Shape *tRig = new RightTriangle(side1, side2);
