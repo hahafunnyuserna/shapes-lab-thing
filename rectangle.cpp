@@ -1,17 +1,23 @@
 #include "rectangle.hpp"
 
+<<<<<<< Updated upstream
 Rectangle::Rectangle(double length, double width)
+=======
+using namespace std;
+
+Rectangle::Rectangle(double width, double height)
+>>>>>>> Stashed changes
 {
-    this->length = length;
     this->width = width;
+    this->height = height;
 }
 
 double Rectangle::getArea()
 {
-    return (length * width);
+    return (width * height);
 }
 
-double Rectangle::getPerimiter()
+double Rectangle::getPerimeter()
 {
-    return (2 * (length + width));
+    return (2 * (width + height));
 }
