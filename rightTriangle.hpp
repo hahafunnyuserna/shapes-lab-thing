@@ -1,15 +1,17 @@
 #pragma once
-#ifndef RECTANGLE_HPP
+#ifndef RIGHTTRIANGLE_HPP
 #include "shapes.hpp"
 
-class Rectangle : public Shape
+using namespace std;
+
+class RightTriangle : public Shape
 {
     private:
         double width;
         double height;
     
     public:
-        explicit Rectangle(double width, double height);
+        explicit RightTriangle(double width, double height);
         double getArea() override;
         double getPerimeter() override;
 };
