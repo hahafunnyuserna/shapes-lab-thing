@@ -1,6 +1,7 @@
-#include "rectangle.cpp"
-#include "circle.cpp"
-#include "rightTriangle.cpp"
+#include "rectangle.hpp"
+#include "circle.hpp"
+#include "rightTriangle.hpp"
+#include "square.hpp"
 #include <iostream>
 
 using namespace std;
@@ -16,6 +17,16 @@ void rectangleCreate()
     
     Shape *rect = new Rectangle(side1, side2);
     cout << "The area is " << rect->getArea() << ".\nThe perimeter is " << rect->getPerimeter() << ".\n";
+}
+
+void squareCreate()
+{
+    double side1;
+    cout << "\nPlease enter the length of the sides:\n";
+    cin >> side1;
+    
+    Shape *square = new Square(side1);
+    cout << "The area is " << square->getArea() << ".\nThe perimeter is " << square->getPerimeter() << ".\n";
 }
 
 void circleCreate()
@@ -59,8 +70,10 @@ int main(void)
         } else if (temp == 'T') {
             rightTriangleCreate();
             break;
+        } else if (temp == 'S') {
+            squareCreate();
+            break;
         }
-        
         else if (temp != 'C' && temp != 'R' && temp != 'S' || temp != 'T' || temp != 'I')
         {
             cout << "ERROR: Please enter a valid character.\n";

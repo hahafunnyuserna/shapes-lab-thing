@@ -1,16 +1,15 @@
 #pragma once
-#ifndef RECTANGLE_HPP
-#include "shapes.hpp"
+#ifndef SQUARE_HPP
+#include"rectangle.hpp"
 
-class Rectangle : public Shape
+class Square : public Rectangle
 {
     private:
         double width;
         double height;
     
     public:
-        explicit Rectangle();
-        explicit Rectangle(double width, double height);
+        explicit Square(double side);
         double getArea() override;
         double getPerimeter() override;
 };
