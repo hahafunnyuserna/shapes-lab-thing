@@ -16,7 +16,6 @@ void rectangleCreate()
     
     Shape *rect = new Rectangle(side1, side2);
     cout << "The area is " << rect->getArea() << ".\nThe perimeter is " << rect->getPerimeter() << ".\n";
-    
 }
 
 void circleCreate()
@@ -27,7 +26,7 @@ void circleCreate()
 
     Shape *circ = new Circle(radius);
     cout << "The area is " << circ->getArea() << ".\nThe perimeter is " << circ->getPerimeter() << ".\n";
-    }
+}
 
 void rightTriangleCreate()
 {
@@ -39,8 +38,7 @@ void rightTriangleCreate()
     cin >> side2;
     
     Shape *tRig = new RightTriangle(side1, side2);
-    cout << "The area is " << tRig->getArea() << ".\nThe perimeter is " << tRig->getPerimeter() << ".\n";
-    
+    cout << "The area is " << tRig->getArea() << ".\nThe perimeter is " << tRig->getPerimeter() << ".\n";    
 }
 
 int main(void)
@@ -62,7 +60,6 @@ int main(void)
             rightTriangleCreate();
             break;
         }
-        
         
         else if (temp != 'C' && temp != 'R' && temp != 'S' || temp != 'T' || temp != 'I')
         {
