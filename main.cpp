@@ -2,6 +2,7 @@
 #include "circle.hpp"
 #include "rightTriangle.hpp"
 #include "square.hpp"
+#include "isocelesRightTriangle.hpp"
 #include <iostream>
 
 using namespace std;
@@ -15,6 +16,14 @@ void squareCreate()
     cout << "The area is " << squ->getArea() << ".\nThe perimeter is " << squ->getPerimeter() << ".\n";
 }
 
+void isocelesRightTriangleCreate()
+{
+    double side;
+    cout << "\nPlease enter the length of the sides:\n";
+    cin >> side;
+    Shape* isoTri = new IsocelesRightTriangle(side);
+    cout << "The area is " << isoTri->getArea() << ".\nThe perimeter is " << isoTri->getPerimeter() << ".\n";
+}
 
 void rectangleCreate()
 {
@@ -75,6 +84,10 @@ int main(void)
         }
         else if (temp == 'S') {
             squareCreate();
+            break;
+        }
+           else if (temp == 'I') {
+            isocelesRightTriangleCreate();
             break;
         }
         else if (temp != 'C' && temp != 'R' && temp != 'S' || temp != 'T' || temp != 'I')
