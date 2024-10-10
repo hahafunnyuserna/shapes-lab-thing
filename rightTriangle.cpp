@@ -3,6 +3,7 @@
 
 using namespace std;
 
+RightTriangle::RightTriangle(){}
 RightTriangle::RightTriangle(double width, double height)
 {
     this->width = width;
