@@ -1,6 +1,6 @@
-#include "circle.hpp"
+#define _USE_MATH_DEFINES
 #include <cmath>
-
+#include "circle.hpp"
 using namespace std;
 
 Circle::Circle(double radius)
@@ -10,7 +10,7 @@ Circle::Circle(double radius)
 
 double Circle::getArea()
 {
-    return (M_PI * (radius * radius));
+    return (M_PI *(radius * radius));
 }
 
 double Circle::getPerimeter()
