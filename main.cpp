@@ -1,28 +1,18 @@
-#include "rectangle.hpp"
-#include "circle.hpp"
-#include "rightTriangle.hpp"
-#include "square.hpp"
+#include "rectangle.cpp"
+#include "circle.cpp"
+#include "rightTriangle.cpp"
+#include "square.cpp"
 #include <iostream>
 
 using namespace std;
-
-void squareCreate()
-{
-    double side;
-    cout << "\nPlease enter the length of the sides:\n";
-    cin >> side;
-    Shape* squ = new Square(side);
-    cout << "The area is " << squ->getArea() << ".\nThe perimeter is " << squ->getPerimeter() << ".\n";
-}
-
 
 void rectangleCreate()
 {
     double side1;
     double side2;
-    cout << "\nPlease enter the width:\n";
+    cout << "\nPlease enter the length of the width:\n";
     cin >> side1;
-    cout << "Please enter the height:\n";
+    cout << "Please enter the length of the height:\n";
     cin >> side2;
 
     Shape* rect = new Rectangle(side1, side2);
@@ -32,7 +22,7 @@ void rectangleCreate()
 void circleCreate()
 {
     double radius;
-    cout << "\nPlease enter the radius:\n";
+    cout << "\nPlease enter the length of the radius:\n";
     cin >> radius;
 
     Shape* circ = new Circle(radius);
@@ -43,13 +33,23 @@ void rightTriangleCreate()
 {
     double side1;
     double side2;
-    cout << "\nPlease enter the width:\n";
+    cout << "\nPlease enter the length of the width:\n";
     cin >> side1;
-    cout << "Please enter the height:\n";
+    cout << "Please enter the length of the height:\n";
     cin >> side2;
 
     Shape* tRig = new RightTriangle(side1, side2);
     cout << "The area is " << tRig->getArea() << ".\nThe perimeter is " << tRig->getPerimeter() << ".\n";
+}
+
+void squareCreate()
+{
+    double side;
+    cout << "\nPlease enter the length of the sides:\n";
+    cin >> side;
+
+    Shape* squa = new Square(side);
+    cout << "The area is " << squa->getArea() << ".\nThe perimeter is " << squa->getPerimeter() << ".\n";
 }
 
 int main(void)
