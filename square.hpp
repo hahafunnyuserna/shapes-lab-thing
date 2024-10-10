@@ -1,16 +1,9 @@
 #pragma once
-#ifndef SQUARE_HPP
-#include"rectangle.hpp"
+#include "rectangle.hpp"
+using namespace std;
 
 class Square : public Rectangle
 {
-    private:
-        double width;
-        double height;
-    
-    public:
-        explicit Square(double side);
-        double getArea() override;
-        double getPerimeter() override;
+public:
+	explicit Square(double side);
 };
-#endif

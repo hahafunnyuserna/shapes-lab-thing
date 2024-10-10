@@ -1,5 +1,5 @@
-#include "rightTriangle.hpp"
 #include <cmath>
+#include "rightTriangle.hpp"
 
 using namespace std;
 

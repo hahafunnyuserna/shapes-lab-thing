@@ -1,6 +1,7 @@
 #include "rectangle.hpp"
 using namespace std;
 
+Rectangle::Rectangle() {};
 Rectangle::Rectangle(double width, double height)
 {
     this->width = width;

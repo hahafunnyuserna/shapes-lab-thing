@@ -6,6 +6,16 @@
 
 using namespace std;
 
+void squareCreate()
+{
+    double side;
+    cout << "\nPlease enter the length of the sides:\n";
+    cin >> side;
+    Shape* squ = new Square(side);
+    cout << "The area is " << squ->getArea() << ".\nThe perimeter is " << squ->getPerimeter() << ".\n";
+}
+
+
 void rectangleCreate()
 {
     double side1;
@@ -14,19 +24,9 @@ void rectangleCreate()
     cin >> side1;
     cout << "Please enter the height:\n";
     cin >> side2;
-    
-    Shape *rect = new Rectangle(side1, side2);
-    cout << "The area is " << rect->getArea() << ".\nThe perimeter is " << rect->getPerimeter() << ".\n";
-}
 
-void squareCreate()
-{
-    double side1;
-    cout << "\nPlease enter the length of the sides:\n";
-    cin >> side1;
-    
-    Shape *square = new Square(side1);
-    cout << "The area is " << square->getArea() << ".\nThe perimeter is " << square->getPerimeter() << ".\n";
+    Shape* rect = new Rectangle(side1, side2);
+    cout << "The area is " << rect->getArea() << ".\nThe perimeter is " << rect->getPerimeter() << ".\n";
 }
 
 void circleCreate()
@@ -35,7 +35,7 @@ void circleCreate()
     cout << "\nPlease enter the radius:\n";
     cin >> radius;
 
-    Shape *circ = new Circle(radius);
+    Shape* circ = new Circle(radius);
     cout << "The area is " << circ->getArea() << ".\nThe perimeter is " << circ->getPerimeter() << ".\n";
 }
 
@@ -47,9 +47,9 @@ void rightTriangleCreate()
     cin >> side1;
     cout << "Please enter the height:\n";
     cin >> side2;
-    
-    Shape *tRig = new RightTriangle(side1, side2);
-    cout << "The area is " << tRig->getArea() << ".\nThe perimeter is " << tRig->getPerimeter() << ".\n";    
+
+    Shape* tRig = new RightTriangle(side1, side2);
+    cout << "The area is " << tRig->getArea() << ".\nThe perimeter is " << tRig->getPerimeter() << ".\n";
 }
 
 int main(void)
@@ -64,13 +64,16 @@ int main(void)
         {
             rectangleCreate();
             break;
-        } else if (temp == 'C') {
+        }
+        else if (temp == 'C') {
             circleCreate();
             break;
-        } else if (temp == 'T') {
+        }
+        else if (temp == 'T') {
             rightTriangleCreate();
             break;
-        } else if (temp == 'S') {
+        }
+        else if (temp == 'S') {
             squareCreate();
             break;
         }
@@ -78,5 +81,5 @@ int main(void)
         {
             cout << "ERROR: Please enter a valid character.\n";
         }
-    }    
+    }
 }
