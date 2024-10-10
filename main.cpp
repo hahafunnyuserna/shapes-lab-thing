@@ -1,8 +1,8 @@
-#include "rectangle.hpp"
-#include "circle.hpp"
-#include "rightTriangle.hpp"
-#include "square.hpp"
-#include "isocelesRightTriangle.hpp"
+#include "rectangle.cpp"
+#include "circle.cpp"
+#include "rightTriangle.cpp"
+#include "square.cpp"
+#include "isocelesRightTriangle.cpp"
 #include <iostream>
 
 using namespace std;
