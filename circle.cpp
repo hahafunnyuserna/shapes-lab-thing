@@ -1,3 +1,4 @@
+#pragma once
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include "circle.hpp"
@@ -16,4 +17,9 @@ double Circle::getArea()
 double Circle::getPerimeter()
 {
     return (M_PI * 2 * radius);
+}
+
+string Circle::getShape()
+{
+    return shape;
 }

@@ -1,3 +1,4 @@
+#pragma once
 #include <cmath>
 #include "rightTriangle.hpp"
 
@@ -18,4 +19,9 @@ double RightTriangle::getArea()
 double RightTriangle::getPerimeter()
 {
     return (width + height + sqrt((width * width) + (height * height)));
+}
+
+string RightTriangle::getShape()
+{
+    return shape;
 }
