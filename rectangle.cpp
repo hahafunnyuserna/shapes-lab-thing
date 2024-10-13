@@ -1,3 +1,4 @@
+#pragma once
 #include "rectangle.hpp"
 using namespace std;
 
@@ -16,4 +17,9 @@ double Rectangle::getArea()
 double Rectangle::getPerimeter()
 {
     return (2 * (width + height));
+}
+
+string Rectangle::getShape()
+{
+    return shape;
 }
