@@ -6,9 +6,10 @@ using namespace std;
 
 class RightTriangle : public Shape
 {
-private:
-    string shape = "Right Triangle";
-      public:
+    private:
+        string shape = "Right Triangle";
+
+    public:
         double width=0;
         double height=0;
         explicit RightTriangle();

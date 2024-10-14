@@ -13,7 +13,7 @@ string printAreaToScreen(Shape* s) {
     string shapeName = s->getShape();
     string shapeArea = to_string(s->getArea());
     string shapePerim = to_string(s->getPerimeter());
-    return "Shape: " + shapeName + "\nArea: " + shapeArea + "\nPerimeter " + shapePerim + "\n";
+    return "Shape: " + s->getShape() + "\nArea: " + to_string(s->getArea()) + "\nPerimeter " + to_string(s->getPerimeter()) + "\n";
 }
 
 void squareCreate()
